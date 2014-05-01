@@ -1,0 +1,112 @@
+Welcome to Git (version 1.9.0-preview20140217)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git remote add origin https://github.com/mobilekit2014/testss.git
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git checkout -b master
+Switched to a new branch 'master'
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git add .
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'D230-16@D230-16-PC.(none)')
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git config --global user.email "pigjunkun@daum.net"
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git config --global user.name "Junkyun"
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git commit -m "first commit"
+[master (root-commit) c3e06d1] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.hwp
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git push -u origin master
+Username for 'https://github.com': Junkyun
+Password for 'https://Junkyun@github.com':
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 3.58 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mobilekit2014/testss.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git checkout -b tests
+Switched to a new branch 'tests'
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (tests)
+$ git add .
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (tests)
+$ git commit -m "tests"
+[tests 23f1f4c] tests
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (tests)
+$ git push -u origin tests
+Username for 'https://github.com': Junkyun
+Password for 'https://Junkyun@github.com':
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 268 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mobilekit2014/testss.git
+ * [new branch]      tests -> tests
+Branch tests set up to track remote branch tests from origin.
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (tests)
+$
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (tests)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git merge tests
+Updating c3e06d1..23f1f4c
+Fast-forward
+ 1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$ git push -u origin master
+Username for 'https://github.com': Junkyun
+Password for 'https://Junkyun@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/mobilekit2014/testss.git
+   c3e06d1..23f1f4c  master -> master
+Branch master set up to track remote branch master from origin.
+
+D230-16@D230-16-PC /C/Users/D230-16/Desktop/gittest (master)
+$
