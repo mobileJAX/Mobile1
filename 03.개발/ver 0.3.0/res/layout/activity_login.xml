@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="200dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="80dp"
+        android:clickable="false"
+	    android:ems="10"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"
+        android:textSize="11dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/textbox"
+        android:hint="     번호를 입력하세요"
+        android:inputType="phone" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/textbox"
+        android:textSize="11dp"
+        android:paddingLeft="10dp"
+        android:hint="     비밀번호를 입력하세요"
+        android:inputType="textPassword" />
+
+
+	     <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="horizontal" >
+
+	         <Button
+	             android:id="@+id/login_btn"
+	             android:layout_width="96dp"
+	             android:layout_height="34dp"
+	             android:layout_marginLeft="80dp"
+	             android:layout_marginTop="10dp"
+	             android:background="@drawable/loginbutton" />
+
+	         <Button
+	             android:id="@+id/join_btn"
+	             android:layout_width="96dp"
+	             android:layout_height="34dp"
+	             android:layout_marginLeft="7dp"
+	             android:layout_marginTop="10dp"
+	             android:background="@drawable/joinbutton" />
+	     </LinearLayout>
+	     
+	     <Button
+	         android:id="@+id/forgot_btn"
+	         android:layout_width="110dp"
+	         android:layout_height="16dp"
+	         android:layout_marginLeft="123dp"
+	         android:layout_marginTop="30dp"
+	         android:background="@drawable/forgotpw"/>
+
+</LinearLayout>

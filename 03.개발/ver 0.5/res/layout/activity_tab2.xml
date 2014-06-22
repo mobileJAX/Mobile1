@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/meback" >
+
+    <TextView
+        android:id="@+id/counttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/heart"
+        android:paddingTop="54dp"
+        android:paddingLeft="55dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+    <TextView
+     	android:id="@+id/usercnt"
+     	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/usercntbox"
+        android:textSize="12dp"
+        android:paddingTop="3dp"
+        android:gravity="center"
+       	android:text="전체 사용자의 수는  0 명입니다."
+       	android:textColor="#4591fb"
+       	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/locatechkbtn"
+        android:layout_width="172dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:layout_gravity="center"
+        android:background="@drawable/gpsbtn" />
+    
+    <Button
+        android:id="@+id/adbtn"
+        android:layout_width="172dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/locatechkbtn"
+        android:layout_below="@+id/locatechkbtn"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/facebookbtn"/>
+
+</LinearLayout>

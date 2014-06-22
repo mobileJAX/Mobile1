@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/joinback"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="200dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:background="@drawable/idbox"
+            android:focusableInTouchMode="false"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/dupl_btn"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/idconfirm"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="6dp" />
+        
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="60dp"
+        android:ems="10"
+        android:hint="    비밀번호"
+        android:background="@drawable/pwbox"
+        android:inputType="textPassword" />
+    
+     <EditText
+        android:id="@+id/input_password2"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        android:hint="    비밀번호 확인"
+        android:background="@drawable/pwbox"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+        	android:layout_width="105dp"
+        	android:layout_height="35dp"
+        	android:layout_marginLeft="60dp"
+        	android:layout_marginTop="15dp"
+        	android:hint="  이메일 주소"
+        	android:background="@drawable/pwbox"
+        	android:ems="10"
+        	android:inputType="textPassword" />
+        
+        <Spinner
+            android:id="@+id/email_spinner"
+            android:layout_width="111dp"
+        	android:layout_height="35dp"
+        	android:layout_marginLeft="18dp"
+        	android:layout_marginTop="15dp"
+        	android:background="@drawable/spinner"
+        	android:prompt="@string/select_mail" />
+        
+    </LinearLayout>
+    
+        
+        
+        
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="125dp"
+        android:background="@drawable/pwbox"
+        android:hint="예)홍길동" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <Button
+	             android:id="@+id/ok_btn"
+	             android:layout_width="112dp"
+	             android:layout_height="47dp"
+	             android:layout_marginTop="18dp"
+	             android:layout_marginLeft="60dp"
+	             android:background="@drawable/joinbtn"/>
+
+         
+          <Button
+	             android:id="@+id/cancel_btn"
+	             android:layout_width="112dp"
+	             android:layout_height="47dp"
+	             android:layout_marginTop="18dp"
+	             android:layout_marginLeft="11dp"
+	             android:background="@drawable/cancelbtn"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>

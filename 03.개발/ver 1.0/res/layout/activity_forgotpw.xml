@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/forgotpwback"
+    android:id="@+id/view1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="235dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="240dp"
+        android:text="가입할때 등록한 이메일을 입력하세요"
+        android:textSize="11sp"/>
+    
+    <EditText
+        android:id="@+id/ph_num"
+            android:layout_width="235dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/idbox"
+            android:paddingLeft="10dp"
+            android:inputType="phone" 
+            android:clickable="false"
+	    android:ems="10"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"/>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/em"
+        	android:layout_width="105dp"
+        	android:layout_height="35dp"
+        	android:layout_marginLeft="60dp"
+        	android:layout_marginTop="15dp"
+        	android:hint="이메일 주소"
+        	android:background="@drawable/pwbox"
+        	android:ems="10"
+        	android:paddingLeft="10dp"/>
+        
+        <Spinner
+            android:id="@+id/email_spinner"
+            android:layout_width="111dp"
+        	android:layout_height="35dp"
+        	android:layout_marginLeft="18dp"
+        	android:layout_marginTop="15dp"
+        	android:background="@drawable/spinner"
+        	android:prompt="@string/select_mail" />
+        
+    </LinearLayout>
+    
+     	<LinearLayout 
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+        
+          <Button
+	             android:id="@+id/ok_btn"
+	             android:layout_width="112dp"
+	             android:layout_height="47dp"
+	             android:layout_marginTop="30dp"
+	             android:layout_marginLeft="60dp"
+	             android:background="@drawable/okbtn"/>
+
+         
+          <Button
+	             android:id="@+id/findpw_cancel"
+	             android:layout_width="112dp"
+	             android:layout_height="47dp"
+	             android:layout_marginTop="30dp"
+	             android:layout_marginLeft="11dp"
+	             android:background="@drawable/cancelbtn"/>
+         
+        </LinearLayout>
+    
+    </LinearLayout>
